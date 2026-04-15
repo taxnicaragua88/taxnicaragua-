@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaPro | Servicios Contables en Managua</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
+    body {line-height: 1.6; color: #333; background: #f8f9fa;}
+    .container {max-width: 1100px; margin: 0 auto; padding: 0 20px;}
+    
+    /* Header */
+    header {background: #0a2540; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 100;}
+    nav {display: flex; justify-content: space-between; align-items: center;}
+    .logo {font-size: 1.5rem; font-weight: 700;}
+    .logo span {color: #00d4aa;}
+    nav ul {display: flex; list-style: none; gap: 25px;}
+    nav a {color: white; text-decoration: none; font-weight: 500;}
+    nav a:hover {color: #00d4aa;}
+    .btn {background: #00d4aa; color: #0a2540; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; border: none; cursor: pointer;}
+    .btn:hover {background: #00b894;}
+    
+    /* Hero */
+    .hero {background: linear-gradient(rgba(10,37,64,0.9), rgba(10,37,64,0.9)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200') center/cover; color: white; padding: 100px 0; text-align: center;}
+    .hero h1 {font-size: 2.8rem; margin-bottom: 15px;}
+    .hero p {font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;}
+    
+    /* Secciones */
+    section {padding: 70px 0;}
+    h2 {text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #0a2540;}
+    .grid-3 {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;}
+    
+    /* Cards */
+    .card {background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center;}
+    .card h3 {color: #0a2540; margin: 15px 0;}
+    .icon {font-size: 2.5rem; color: #00d4aa;}
+    
+    /* Precios */
+    .precio {background: #0a2540; color: white;}
+    .precio .card {background: #112d4e; color: white;}
+    .precio h3 {color: #00d4aa;}
+    .monto {font-size: 2.5rem; font-weight: 700; margin: 15px 0;}
+    .monto span {font-size: 1rem; font-weight: 400;}
+    
+    /* Contacto */
+    form {max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);}
+    .form-group {margin-bottom: 20px;}
+    label {display: block; margin-bottom: 5px; font-weight: 600;}
+    input, textarea, select {width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;}
+    textarea {height: 120px;}
+    
+    /* Footer */
+    footer {background: #0a2540; color: white; text-align: center; padding: 30px 0;}
+    
+    @media (max-width: 768px) {
+      nav ul {display: none;}
+      .hero h1 {font-size: 2rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Conta<span>Pro</span></div>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Planes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn">Cotizar Gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Servicios Contables Confiables en Managua</h1>
+      <p>Olvidate de la DGI y el INSS. Nos encargamos de tu contabilidad para que te enfocás en hacer crecer tu negocio.</p>
+      <a href="#contacto" class="btn">Agendar Consulta Gratis</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Contabilidad Mensual</h3>
+          <p>Registro de operaciones, estados financieros y libros contables al día según normas NIIF.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏛️</div>
+          <h3>Declaraciones DGI</h3>
+          <p>Presentamos tu IR, IVA, retenciones e informe anual. Cero multas, cero estrés.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👥</div>
+          <h3>Planilla e INSS</h3>
+          <p>Cálculo de planilla, INSS Laboral, Patronal, INATEC y constancias de trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #e9ecef;">
+    <div class="container">
+      <h2>¿Por qué ContaPro?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>+10 Años de Experiencia</h3>
+          <p>Contadores CPA autorizados con experiencia en PYMES nicaragüenses.</p>
+        </div>
+        <div class="card">
+          <h3>Reportes Claros</h3>
+          <p>Te enviamos reportes mensuales que sí entendés. Sin tecnicismos raros.</p>
+        </div>
+        <div class="card">
+          <h3>Soporte por WhatsApp</h3>
+          <p>Respondemos tus dudas rápido. Estamos para ayudarte cuando lo necesitás.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios" class="precio">
+    <div class="container">
+      <h2 style="color: white;">Planes Mensuales</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Emprendedor</h3>
+          <div class="monto">$60<span>/mes</span></div>
+          <p>Hasta 30 operaciones<br>Declaraciones DGI<br>1 trabajador INSS</p>
+          <br><a href="#contacto" class="btn">Elegir Plan</a>
+        </div>
+        <div class="card" style="border: 2px solid #00d4aa;">
+          <h3>Negocio</h3>
+          <div class="monto">$120<span>/mes</span></div>
+          <p>Hasta 80 operaciones<br>Declaraciones DGI<br>Hasta 5 trabajadores<br>Asesoría incluida</p>
+          <br><a href="#contacto" class="btn">Elegir Plan</a>
+        </div>
+        <div class="card">
+          <h3>Empresa</h3>
+          <div class="monto">$220<span>/mes</span></div>
+          <p>Operaciones ilimitadas<br>Todo lo anterior<br>Hasta 15 trabajadores<br>Reunión mensual</p>
+          <br><a href="#contacto" class="btn">Elegir Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Hablá con un Contador Hoy</h2>
+      <form>
+        <div class="form-group">
+          <label>Nombre Completo</label>
+          <input type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input type="tel" placeholder="8xxx-xxxx" required>
+        </div>
+        <div class="form-group">
+          <label>Tipo de Negocio</label>
+          <select required>
+            <option value="">Seleccionar</option>
+            <option>Comercio</option>
+            <option>Servicio</option>
+            <option>Régimen General</option>
+            <option>Cuota Fija</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea placeholder="¿En qué te ayudamos?"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">Enviar y Recibir Cotización</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>ContaPro Nicaragua</strong> | Managua, Nicaragua</p>
+      <p>WhatsApp: 8xxx-xxxx | Email: contacto@contapro.com.ni</p>
+      <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">© 2026 ContaPro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
