@@ -32,8 +32,6 @@
     .monto {font-size: 2.5rem; font-weight: 700; margin: 15px 0;}
     .monto span {font-size: 1rem; font-weight: 400;}
     footer {background: #0a2540; color: white; text-align: center; padding: 30px 0;}
-    
-    /* CHATBOT */
     .chat-btn {position: fixed; bottom: 25px; right: 25px; background: #00d4aa; color: #0a2540; width: 60px; height: 60px; border-radius: 50%; border: none; font-size: 1.8rem; cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000;}
     .chat-window {position: fixed; bottom: 100px; right: 25px; width: 350px; height: 500px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; z-index: 1000; overflow: hidden;}
     .chat-header {background: #0a2540; color: white; padding: 15px; font-weight: 600; display: flex; justify-content: space-between; align-items: center;}
@@ -48,7 +46,6 @@
     .chat-input {display: flex; border-top: 1px solid #ddd;}
     .chat-input input {flex: 1; border: none; padding: 15px; outline: none;}
     .chat-input button {background: #0a2540; color: white; border: none; padding: 0 20px; cursor: pointer; font-weight: 600;}
-    
     @media (max-width: 768px) {
       nav ul {display: none;}
       .hero h1 {font-size: 2rem;}
@@ -70,7 +67,6 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
     <div class="container">
       <h1>Servicios Contables Confiables en Managua</h1>
@@ -78,71 +74,29 @@
       <a href="#" class="btn" onclick="toggleChat()">Chatear con Nosotros</a>
     </div>
   </section>
-
   <section id="servicios">
     <div class="container">
       <h2>Nuestros Servicios</h2>
       <div class="grid-3">
-        <div class="card">
-          <div class="icon">📊</div>
-          <h3>Actualización Contable</h3>
-          <p>Ponemos al día tu contabilidad atrasada, estados financieros y libros contables según normas NIIF.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📦</div>
-          <h3>Levantamiento de Inventarios</h3>
-          <p>Inventario físico y conciliación con sistema. Base para tus estados financieros y declaraciones.</p>
-        </div>
-        <div class="card">
-          <div class="icon">✅</div>
-          <h3>Certificación de Estados Financieros</h3>
-          <p>Estados financieros firmados y sellados por CPA para bancos, licitaciones o trámites.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🏛️</div>
-          <h3>Declaraciones DGI y Alcaldía</h3>
-          <p>Preparamos e ingresamos tus declaraciones mensuales: IR, IVA, retenciones, IMI y más.</p>
-        </div>
-        <div class="card">
-          <div class="icon">👥</div>
-          <h3>Planilla e INSS</h3>
-          <p>Cálculo de planilla, INSS laboral, patronal, INATEC y constancias de trabajo.</p>
-        </div>
-        <div class="card">
-          <div class="icon">💼</div>
-          <h3>Asesoría Fiscal</h3>
-          <p>Te guiamos para pagar lo justo y cumplir sin multas. Consultas ilimitadas por WhatsApp.</p>
-        </div>
+        <div class="card"><div class="icon">📊</div><h3>Actualización Contable</h3><p>Ponemos al día tu contabilidad atrasada, estados financieros y libros contables según normas NIIF.</p></div>
+        <div class="card"><div class="icon">📦</div><h3>Levantamiento de Inventarios</h3><p>Inventario físico y conciliación con sistema. Base para tus estados financieros y declaraciones.</p></div>
+        <div class="card"><div class="icon">✅</div><h3>Certificación de Estados Financieros</h3><p>Estados financieros firmados y sellados por CPA para bancos, licitaciones o trámites.</p></div>
+        <div class="card"><div class="icon">🏛️</div><h3>Declaraciones DGI y Alcaldía</h3><p>Preparamos e ingresamos tus declaraciones mensuales: IR, IVA, retenciones, IMI y más.</p></div>
+        <div class="card"><div class="icon">👥</div><h3>Planilla e INSS</h3><p>Cálculo de planilla, INSS laboral, patronal, INATEC y constancias de trabajo.</p></div>
+        <div class="card"><div class="icon">💼</div><h3>Asesoría Fiscal</h3><p>Te guiamos para pagar lo justo y cumplir sin multas. Consultas ilimitadas por WhatsApp.</p></div>
       </div>
     </div>
   </section>
-
   <section id="precios" class="precio">
     <div class="container">
       <h2 style="color: white;">Planes Mensuales</h2>
       <div class="grid-3">
-        <div class="card">
-          <h3>Emprendedor</h3>
-          <div class="monto">$60<span>/mes</span></div>
-          <p>Hasta 30 operaciones<br>Declaraciones DGI y Alcaldía<br>1 trabajador INSS</p>
-          <br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Emprendedor')">Elegir Plan</a>
-        </div>
-        <div class="card" style="border: 2px solid #00d4aa;">
-          <h3>Negocio</h3>
-          <div class="monto">$120<span>/mes</span></div>
-          <p>Hasta 80 operaciones<br>Declaraciones completas<br>Hasta 5 trabajadores<br>Asesoría incluida</p>
-          <br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Negocio')">Elegir Plan</a>
-        </div>
-        <div class="card">
-          <h3>Empresa</h3>
-          <div class="monto">$220<span>/mes</span></div>
-          <p>Operaciones ilimitadas<br>Todo incluido<br>Hasta 15 trabajadores<br>Reunión mensual</p>
-          <br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Empresa')">Elegir Plan</a>
-        </div>
+        <div class="card"><h3>Emprendedor</h3><div class="monto">$60<span>/mes</span></div><p>Hasta 30 operaciones<br>Declaraciones DGI y Alcaldía<br>1 trabajador INSS</p><br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Emprendedor')">Elegir Plan</a></div>
+        <div class="card" style="border: 2px solid #00d4aa;"><h3>Negocio</h3><div class="monto">$120<span>/mes</span></div><p>Hasta 80 operaciones<br>Declaraciones completas<br>Hasta 5 trabajadores<br>Asesoría incluida</p><br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Negocio')">Elegir Plan</a></div>
+        <div class="card"><h3>Empresa</h3><div class="monto">$220<span>/mes</span></div><p>Operaciones ilimitadas<br>Todo incluido<br>Hasta 15 trabajadores<br>Reunión mensual</p><br><a href="#" class="btn" onclick="toggleChat(); selectService('Plan Empresa')">Elegir Plan</a></div>
       </div>
     </div>
   </section>
-
   <footer>
     <div class="container">
       <p><strong>TaxNicaragua.com</strong> | Managua, Nicaragua</p>
@@ -150,15 +104,9 @@
       <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">© 2026 TaxNicaragua.com. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <!-- CHATBOT -->
   <button class="chat-btn" onclick="toggleChat()">💬</button>
-  
   <div class="chat-window" id="chatWindow">
-    <div class="chat-header">
-      <span>Asistente TaxNicaragua</span>
-      <button class="chat-close" onclick="toggleChat()">✕</button>
-    </div>
+    <div class="chat-header"><span>Asistente TaxNicaragua</span><button class="chat-close" onclick="toggleChat()">✕</button></div>
     <div class="chat-messages" id="chatMessages">
       <div class="msg msg-bot">Hola, soy el asistente inteligente de TaxNicaragua.com 👋 ¿En qué te puedo ayudar? Estos son los servicios que ofrecemos, selecciónalo:</div>
       <div id="serviceList"></div>
@@ -168,79 +116,50 @@
       <button onclick="sendMessage()">Enviar</button>
     </div>
   </div>
-
   <script>
     const chatWindow = document.getElementById('chatWindow');
     const chatMessages = document.getElementById('chatMessages');
     const userInput = document.getElementById('userInput');
     const serviceList = document.getElementById('serviceList');
     const phoneNumber = '50576518677';
-    
-    const servicios = [
-      'Actualización contable',
-      'Levantamiento de inventarios', 
-      'Certificación de estados financieros',
-      'Preparación e ingreso de declaraciones mensuales DGI',
-      'Declaraciones Alcaldía',
-      'Planilla e INSS',
-      'Asesoría fiscal'
-    ];
-    
+    const servicios = ['Actualización contable','Levantamiento de inventarios','Certificación de estados financieros','Preparación e ingreso de declaraciones mensuales DGI','Declaraciones Alcaldía','Planilla e INSS','Asesoría fiscal'];
     servicios.forEach(s => {
       const btn = document.createElement('button');
-      btn.className = 'service-btn';
-      btn.textContent = s;
+      btn.className = 'service-btn'; btn.textContent = s;
       btn.onclick = () => selectService(s);
       serviceList.appendChild(btn);
     });
-    
-    function toggleChat() {
-      chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
-    }
-    
+    function toggleChat() {chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';}
     function selectService(servicio) {
       addMessage(servicio, 'user');
       const waLink = `https://wa.me/${phoneNumber}?text=Hola%20TaxNicaragua,%20necesito:%20${encodeURIComponent(servicio)}`;
       const reply = `Listo. Te paso directo con un contador para "${servicio}". Dale clic abajo:`;
       addMessage(reply, 'bot');
       const waBtn = document.createElement('a');
-      waBtn.href = waLink;
-      waBtn.target = '_blank';
-      waBtn.className = 'wa-btn';
+      waBtn.href = waLink; waBtn.target = '_blank'; waBtn.className = 'wa-btn';
       waBtn.textContent = '📱 Abrir chat en WhatsApp 7651 8677';
       chatMessages.appendChild(waBtn);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
-    
     function sendMessage() {
       const text = userInput.value.trim();
       if (!text) return;
-      addMessage(text, 'user');
-      userInput.value = '';
+      addMessage(text, 'user'); userInput.value = '';
       setTimeout(() => botReply(text), 600);
     }
-    
     function addMessage(text, sender) {
       const msg = document.createElement('div');
-      msg.className = `msg msg-${sender}`;
-      msg.textContent = text;
+      msg.className = `msg msg-${sender}`; msg.textContent = text;
       chatMessages.appendChild(msg);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
-    
     function botReply(text) {
       text = text.toLowerCase();
       let reply = 'Seleccioná uno de los servicios de arriba para hablar directo con nosotros por WhatsApp 7651 8677.';
-      
-      if (text.includes('precio') || text.includes('plan')) {
-        reply = 'Planes desde $60/mes. Tocá un servicio arriba y coordinamos por WhatsApp el plan que te conviene.';
-      } else if (text.includes('dgi')) {
-        reply = 'Preparamos e ingresamos tus declaraciones DGI. Seleccioná ese servicio arriba para ir a WhatsApp.';
-      } else if (text.includes('alcaldia') || text.includes('imi')) {
-        reply = 'También hacemos tu declaración de Alcaldía. Seleccioná "Declaraciones Alcaldía" para ir a WhatsApp.';
-      } else if (text.includes('hola')) {
-        reply = '¡Hola! Soy el asistente de TaxNicaragua.com. Tocá cualquier servicio de la lista para ir directo a WhatsApp 👆';
-      }
+      if (text.includes('precio') || text.includes('plan')) {reply = 'Planes desde $60/mes. Tocá un servicio arriba y coordinamos por WhatsApp el plan que te conviene.';}
+      else if (text.includes('dgi')) {reply = 'Preparamos e ingresamos tus declaraciones DGI. Seleccioná ese servicio arriba para ir a WhatsApp.';}
+      else if (text.includes('alcaldia') || text.includes('imi')) {reply = 'También hacemos tu declaración de Alcaldía. Seleccioná "Declaraciones Alcaldía" para ir a WhatsApp.';}
+      else if (text.includes('hola')) {reply = '¡Hola! Soy el asistente de TaxNicaragua.com. Tocá cualquier servicio de la lista para ir directo a WhatsApp 👆';}
       addMessage(reply, 'bot');
     }
   </script>
