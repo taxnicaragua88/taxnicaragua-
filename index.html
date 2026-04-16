@@ -4,21 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tax Nicaragua | Contabilidad, impuestos y servicios legales</title>
-    <meta name="description" content="Tax Nicaragua brinda servicios contables, fiscales, legales, certificaciones contables y apoyo administrativo para empresas en Nicaragua." />
-    
-    <!-- SEO + Social -->
-    <link rel="canonical" href="https://taxnicaragua.com" />
-    <meta property="og:title" content="Tax Nicaragua | Contabilidad, impuestos y servicios legales" />
-    <meta property="og:description" content="Acompañamiento contable, fiscal y legal con 16+ años de experiencia en Nicaragua." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://taxnicaragua.com" />
-    <meta name="theme-color" content="#1d4ed8" />
-    
-    <!-- Favicon SVG inline -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231d4ed8'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>T</text></svg>" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    
+    <meta
+      name="description"
+      content="Tax Nicaragua brinda servicios contables, fiscales, legales, certificaciones contables y apoyo administrativo para empresas en Nicaragua."
+    />
     <style>
       :root {
         --blue-700: #1d4ed8;
@@ -38,39 +27,50 @@
         --shadow-sm: 0 10px 25px rgba(15, 23, 42, 0.06);
         --shadow-md: 0 20px 45px rgba(15, 23, 42, 0.08);
         --shadow-lg: 0 28px 70px rgba(15, 23, 42, 0.12);
-        --radius-sm: 16px;
-        --radius-md: 20px;
         --radius-xl: 24px;
         --radius-2xl: 32px;
         --container: 1200px;
       }
 
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      @media (prefers-reduced-motion: reduce) {
-        html { scroll-behavior: auto; }
-        *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
         margin: 0;
-        font-family: system-ui, -apple-system, "Segoe UI", Inter, Arial, sans-serif;
+        font-family: Inter, Arial, Helvetica, sans-serif;
         color: var(--slate-900);
         background: var(--white);
         line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
       }
 
-      a { color: inherit; text-decoration: none; }
-      a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-        outline: 3px solid var(--blue-700);
-        outline-offset: 2px;
+      a {
+        color: inherit;
+        text-decoration: none;
       }
-      
-      img { max-width: 100%; height: auto; display: block; }
-      .container { width: min(var(--container), calc(100% - 2rem)); margin: 0 auto; }
-      .section { padding: 88px 0; }
-      .section-muted { background: var(--slate-50); }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 88px 0;
+      }
+
+      .section-muted {
+        background: var(--slate-50);
+      }
+
       .section-dark {
         background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
         color: var(--white);
@@ -96,17 +96,28 @@
         color: #dbeafe;
       }
 
-      .section-header { max-width: 760px; margin-bottom: 44px; }
+      .section-header {
+        max-width: 760px;
+        margin-bottom: 44px;
+      }
+
       .section-header h2 {
         margin: 18px 0 14px;
         font-size: clamp(2rem, 4vw, 3rem);
         line-height: 1.08;
-        text-wrap: balance;
       }
-      .section-header p { margin: 0; color: var(--slate-600); font-size: 1.05rem; }
+
+      .section-header p {
+        margin: 0;
+        color: var(--slate-600);
+        font-size: 1.05rem;
+      }
+
       .section-dark .section-header p,
       .section-dark .card p,
-      .section-dark .card li { color: rgba(255, 255, 255, 0.88); }
+      .section-dark .card li {
+        color: rgba(255, 255, 255, 0.78);
+      }
 
       .site-header {
         position: sticky;
@@ -132,8 +143,15 @@
         min-width: 0;
       }
 
-      .brand svg { height: 52px; width: 52px; flex-shrink: 0; }
-      .brand-meta { min-width: 0; }
+      .brand img {
+        height: 52px;
+        width: auto;
+      }
+
+      .brand-meta {
+        min-width: 0;
+      }
+
       .brand-title {
         margin: 0;
         font-size: 0.85rem;
@@ -142,18 +160,35 @@
         font-weight: 800;
         white-space: nowrap;
       }
-      .brand-subtitle { margin: 2px 0 0; font-size: 0.78rem; color: var(--slate-500); }
 
-      .nav { display: flex; align-items: center; gap: 28px; }
+      .brand-subtitle {
+        margin: 2px 0 0;
+        font-size: 0.78rem;
+        color: var(--slate-500);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+
       .nav a {
         color: var(--slate-600);
         font-weight: 600;
         font-size: 0.95rem;
-        transition: color 0.2s ease;
       }
-      .nav a:hover, .nav a:focus { color: var(--blue-700); }
 
-      .header-actions { display: flex; align-items: center; gap: 12px; }
+      .nav a:hover,
+      .nav a:focus {
+        color: var(--blue-700);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
 
       .button {
         display: inline-flex;
@@ -169,19 +204,31 @@
         cursor: pointer;
         transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
       }
-      .button:hover { transform: translateY(-1px); }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
       .button-primary {
         background: var(--blue-700);
         color: var(--white);
         box-shadow: var(--shadow-sm);
       }
-      .button-primary:hover { background: var(--blue-800); box-shadow: var(--shadow-md); }
+
+      .button-primary:hover {
+        background: var(--blue-800);
+      }
+
       .button-outline {
         background: var(--white);
         color: var(--slate-800);
         border-color: var(--slate-300);
       }
-      .button-outline:hover { border-color: #93c5fd; color: var(--blue-700); }
+
+      .button-outline:hover {
+        border-color: #93c5fd;
+        color: var(--blue-700);
+      }
 
       .menu-button {
         display: none;
@@ -195,7 +242,9 @@
         justify-content: center;
       }
 
-      .menu-icon, .menu-icon::before, .menu-icon::after {
+      .menu-icon,
+      .menu-icon::before,
+      .menu-icon::after {
         width: 18px;
         height: 2px;
         background: var(--slate-800);
@@ -205,13 +254,34 @@
         transition: transform 0.25s ease, opacity 0.25s ease;
         content: "";
       }
-      .menu-icon::before { position: absolute; top: -6px; }
-      .menu-icon::after { position: absolute; top: 6px; }
-      .menu-button.active .menu-icon { background: transparent; }
-      .menu-button.active .menu-icon::before { transform: translateY(6px) rotate(45deg); }
-      .menu-button.active .menu-icon::after { transform: translateY(-6px) rotate(-45deg); }
 
-      .mobile-nav { display: none; padding: 0 0 18px; }
+      .menu-icon::before {
+        position: absolute;
+        top: -6px;
+      }
+
+      .menu-icon::after {
+        position: absolute;
+        top: 6px;
+      }
+
+      .menu-button.active .menu-icon {
+        background: transparent;
+      }
+
+      .menu-button.active .menu-icon::before {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      .menu-button.active .menu-icon::after {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+
+      .mobile-nav {
+        display: none;
+        padding: 0 0 18px;
+      }
+
       .mobile-nav-inner {
         border-top: 1px solid var(--slate-200);
         padding-top: 18px;
@@ -222,7 +292,8 @@
       .hero {
         position: relative;
         overflow: hidden;
-        background: radial-gradient(circle at top right, rgba(29, 78, 216, 0.11), transparent 30%),
+        background:
+          radial-gradient(circle at top right, rgba(29, 78, 216, 0.11), transparent 30%),
           radial-gradient(circle at left, rgba(15, 23, 42, 0.06), transparent 35%),
           linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
       }
@@ -239,10 +310,21 @@
         font-size: clamp(2.5rem, 5vw, 4.6rem);
         line-height: 0.98;
         letter-spacing: -0.04em;
-        text-wrap: balance;
       }
-      .hero-copy p { margin: 0; max-width: 760px; font-size: 1.1rem; color: var(--slate-600); }
-      .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+      .hero-copy p {
+        margin: 0;
+        max-width: 760px;
+        font-size: 1.1rem;
+        color: var(--slate-600);
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
 
       .stats-grid {
         display: grid;
@@ -256,20 +338,38 @@
         border: 1px solid var(--slate-200);
         border-radius: var(--radius-xl);
         box-shadow: var(--shadow-sm);
-        transition: transform 0.22s ease, box-shadow 0.22s ease;
       }
-      .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-      .card-body { padding: 28px; }
-      .stats-grid .card-body { padding: 24px; }
-      .stat-value { font-size: 1.15rem; font-weight: 800; color: var(--slate-900); }
-      .stat-label { margin-top: 8px; font-size: 0.94rem; color: var(--slate-600); }
+
+      .card-body {
+        padding: 28px;
+      }
+
+      .stats-grid .card-body {
+        padding: 24px;
+      }
+
+      .stat-value {
+        font-size: 1.15rem;
+        font-weight: 800;
+        color: var(--slate-900);
+      }
+
+      .stat-label {
+        margin-top: 8px;
+        font-size: 0.94rem;
+        color: var(--slate-600);
+      }
 
       .hero-panel {
         overflow: hidden;
         border-radius: var(--radius-2xl);
         box-shadow: var(--shadow-lg);
       }
-      .hero-panel-inner { padding: 34px; background: linear-gradient(135deg, #eff6ff 0%, #ffffff 45%, #f8fafc 100%); }
+
+      .hero-panel-inner {
+        padding: 34px;
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 45%, #f8fafc 100%);
+      }
 
       .profile-grid {
         display: grid;
@@ -286,7 +386,13 @@
         border: 1px solid var(--slate-200);
         background: #f8fafc;
       }
-      .profile-photo { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1; }
+
+      .profile-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
       .profile-kicker {
         font-size: 0.8rem;
         font-weight: 800;
@@ -295,17 +401,31 @@
         color: var(--blue-700);
         margin: 0;
       }
-      .profile-name { margin: 8px 0 10px; font-size: clamp(1.9rem, 3vw, 2.4rem); line-height: 1.1; }
-      .profile-role { margin: 0; color: var(--slate-600); }
 
-      .info-stack { display: grid; gap: 14px; margin-top: 20px; }
+      .profile-name {
+        margin: 8px 0 10px;
+        font-size: clamp(1.9rem, 3vw, 2.4rem);
+        line-height: 1.1;
+      }
+
+      .profile-role {
+        margin: 0;
+        color: var(--slate-600);
+      }
+
+      .info-stack {
+        display: grid;
+        gap: 14px;
+        margin-top: 20px;
+      }
+
       .info-item {
         display: flex;
         gap: 14px;
         align-items: flex-start;
         background: var(--white);
         border: 1px solid var(--slate-200);
-        border-radius: var(--radius-md);
+        border-radius: 20px;
         padding: 16px 18px;
       }
 
@@ -313,26 +433,65 @@
         flex: 0 0 auto;
         width: 44px;
         height: 44px;
-        border-radius: var(--radius-sm);
+        border-radius: 16px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         background: var(--blue-50);
         color: var(--blue-700);
       }
-      .icon-badge svg { width: 22px; height: 22px; }
 
-      .services-grid, .blog-grid, .publication-grid, .feature-grid { display: grid; gap: 22px; }
-      .services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .feature-grid { grid-template-columns: 1fr; }
-      .publication-grid, .blog-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .icon-badge svg {
+        width: 22px;
+        height: 22px;
+      }
 
-      .service-card h3, .blog-card h3, .publication-card h3, .feature-card h3 {
+      .services-grid,
+      .blog-grid,
+      .publication-grid,
+      .feature-grid {
+        display: grid;
+        gap: 22px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .publication-grid,
+      .blog-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .service-card {
+        height: 100%;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+      }
+
+      .service-card:hover,
+      .blog-card:hover,
+      .publication-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .service-card h3,
+      .blog-card h3,
+      .publication-card h3,
+      .feature-card h3 {
         margin: 18px 0 10px;
         font-size: 1.22rem;
         line-height: 1.2;
       }
-      .service-card p, .blog-card p, .publication-card p, .feature-card p {
+
+      .service-card p,
+      .blog-card p,
+      .publication-card p,
+      .feature-card p {
         margin: 0;
         color: var(--slate-600);
         font-size: 0.97rem;
@@ -345,6 +504,7 @@
         display: grid;
         gap: 11px;
       }
+
       .bullet-list li {
         display: flex;
         align-items: flex-start;
@@ -352,6 +512,7 @@
         font-size: 0.95rem;
         color: var(--slate-700);
       }
+
       .bullet-list li::before {
         content: "";
         width: 8px;
@@ -368,7 +529,12 @@
         box-shadow: none;
       }
 
-      .chip-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
       .chip {
         display: inline-flex;
         align-items: center;
@@ -398,6 +564,7 @@
         font-size: 0.9rem;
         font-weight: 700;
       }
+
       .text-link {
         display: inline-flex;
         align-items: center;
@@ -413,17 +580,50 @@
         gap: 24px;
         align-items: start;
       }
-      .contact-stack { display: grid; gap: 16px; }
-      .contact-item { display: flex; gap: 14px; align-items: flex-start; }
-      .contact-form .card-body { padding: 30px; }
-      .form-grid { display: grid; gap: 18px; }
-      .form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-      .field { display: grid; gap: 8px; }
-      .field label { font-size: 0.92rem; font-weight: 700; color: var(--slate-700); }
-      .field input, .field textarea, .field select {
+
+      .contact-stack {
+        display: grid;
+        gap: 16px;
+      }
+
+      .contact-item {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+
+      .contact-form .card-body {
+        padding: 30px;
+      }
+
+      .form-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .field label {
+        font-size: 0.92rem;
+        font-weight: 700;
+        color: var(--slate-700);
+      }
+
+      .field input,
+      .field textarea,
+      .field select {
         width: 100%;
         border: 1px solid var(--slate-300);
-        border-radius: var(--radius-md);
+        border-radius: 18px;
         min-height: 52px;
         padding: 14px 16px;
         font: inherit;
@@ -432,12 +632,24 @@
         outline: none;
         transition: border-color 0.18s ease, box-shadow 0.18s ease;
       }
-      .field textarea { min-height: 156px; resize: vertical; }
-      .field input:focus, .field textarea:focus, .field select:focus {
+
+      .field textarea {
+        min-height: 156px;
+        resize: vertical;
+      }
+
+      .field input:focus,
+      .field textarea:focus,
+      .field select:focus {
         border-color: #93c5fd;
         box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
       }
-      .form-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+      .form-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
 
       .assistant {
         position: fixed;
@@ -446,6 +658,7 @@
         z-index: 45;
         width: min(340px, calc(100vw - 24px));
       }
+
       .assistant-header {
         display: flex;
         align-items: center;
@@ -454,10 +667,26 @@
         background: var(--blue-700);
         color: var(--white);
       }
-      .assistant-header p { margin: 0; }
-      .assistant-header .small { font-size: 0.82rem; color: rgba(255, 255, 255, 0.85); }
-      .assistant-body { padding: 18px; }
-      .assistant-options { display: flex; flex-wrap: wrap; gap: 10px; }
+
+      .assistant-header p {
+        margin: 0;
+      }
+
+      .assistant-header .small {
+        font-size: 0.82rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .assistant-body {
+        padding: 18px;
+      }
+
+      .assistant-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
       .assistant-option {
         border: 1px solid var(--slate-300);
         background: var(--white);
@@ -469,16 +698,18 @@
         cursor: pointer;
         transition: all 0.2s ease;
       }
+
       .assistant-option.active {
         border-color: var(--blue-700);
         background: var(--blue-50);
         color: var(--blue-700);
       }
+
       .assistant-status {
         margin: 14px 0 0;
         padding: 14px 16px;
         background: var(--slate-50);
-        border-radius: var(--radius-md);
+        border-radius: 18px;
         color: var(--slate-700);
         font-size: 0.95rem;
       }
@@ -487,6 +718,7 @@
         border-top: 1px solid var(--slate-200);
         background: var(--white);
       }
+
       .footer-inner {
         min-height: 110px;
         display: flex;
@@ -495,56 +727,96 @@
         gap: 20px;
         flex-wrap: wrap;
       }
-      .footer-copy { color: var(--slate-600); font-size: 0.95rem; }
+
+      .footer-copy {
+        color: var(--slate-600);
+        font-size: 0.95rem;
+      }
 
       @media (max-width: 1100px) {
-        .hero-grid, .publication-layout, .contact-grid, .profile-grid { grid-template-columns: 1fr; }
-        .services-grid, .publication-grid, .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .hero-grid,
+        .publication-layout,
+        .contact-grid,
+        .profile-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .services-grid,
+        .publication-grid,
+        .blog-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
       }
+
       @media (max-width: 920px) {
-        .nav, .header-actions { display: none; }
-        .menu-button { display: inline-flex; }
-        .mobile-nav.open { display: block; }
-        .stats-grid, .services-grid, .publication-grid, .blog-grid, .form-row { grid-template-columns: 1fr; }
-        .hero-copy h1 { line-height: 1.02; }
+        .nav,
+        .header-actions {
+          display: none;
+        }
+
+        .menu-button {
+          display: inline-flex;
+        }
+
+        .mobile-nav.open {
+          display: block;
+        }
+
+        .stats-grid,
+        .services-grid,
+        .publication-grid,
+        .blog-grid,
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy h1 {
+          line-height: 1.02;
+        }
       }
+
       @media (max-width: 640px) {
-        .section { padding: 72px 0; }
-        .header-inner { min-height: 74px; }
-        .brand svg { height: 46px; width: 46px; }
-        .brand-title { font-size: 0.74rem; letter-spacing: 0.22em; }
-        .hero-panel-inner, .card-body, .contact-form .card-body { padding: 22px; }
-        .assistant { right: 12px; bottom: 12px; width: calc(100vw - 24px); }
-        .footer-inner { align-items: flex-start; }
+        .section {
+          padding: 72px 0;
+        }
+
+        .header-inner {
+          min-height: 74px;
+        }
+
+        .brand img {
+          height: 46px;
+        }
+
+        .brand-title {
+          font-size: 0.74rem;
+          letter-spacing: 0.22em;
+        }
+
+        .hero-panel-inner,
+        .card-body,
+        .contact-form .card-body {
+          padding: 22px;
+        }
+
+        .assistant {
+          right: 12px;
+          bottom: 12px;
+          width: calc(100vw - 24px);
+        }
+
+        .footer-inner {
+          align-items: flex-start;
+        }
       }
     </style>
-    
-    <!-- Schema.org para Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AccountingService",
-      "name": "Tax Nicaragua",
-      "url": "https://taxnicaragua.com",
-      "telephone": "+50576518677",
-      "email": "julioespinoza@taxnicaragua.com",
-      "address": { "@type": "PostalAddress", "addressCountry": "NI" },
-      "areaServed": "NI",
-      "founder": { "@type": "Person", "name": "Julio Francisco Espinoza" }
-    }
-    </script>
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a class="brand" href="#inicio" aria-label="Tax Nicaragua - Inicio">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="100" height="100" rx="20" fill="#1d4ed8"/>
-              <path d="M30 35h40v6H30zM30 48h28v6H30zM30 61h34v6H30z" fill="white"/>
-              <circle cx="75" cy="75" r="12" fill="white"/>
-              <path d="M71 75l3 3 5-6" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <a class="brand" href="#inicio" aria-label="Tax Nicaragua">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAACzCAYAAABPeWqnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA22SURBVHhe7d0JmxTHGcfxf4aUmIRcgCNM8A4SuE6QYx1ODaPgdJxjPC4gBfLJJHOMnA4JWA65xvAZDjkWEsM5xOJwjDF8HEcI0uvAUS44AhJ4oFa9VdM90z3dfe8/ZFkdRHe11N1V1f1V1V1dVf0N3V3dPT2a6ekAERERkQyR9AsgIiIiUiWSeEVERKQKJP0CiIiIiFSBpF8AERERkSoQ9AsgIiIiVSDpF0BERESkCgT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVfD/AAP4T4YcclLBAAAAAElFTkSuQmCC" alt="Tax Nicaragua" />
             <div class="brand-meta">
               <p class="brand-title">TAX NICARAGUA</p>
               <p class="brand-subtitle">taxnicaragua.com</p>
@@ -562,7 +834,7 @@
 
           <div class="header-actions">
             <a class="button button-outline" href="#contacto">Contáctenos</a>
-            <a class="button button-primary" id="header-whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">WhatsApp</a>
+            <a class="button button-primary" id="header-whatsapp" target="_blank" rel="noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">WhatsApp</a>
           </div>
 
           <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
@@ -580,7 +852,7 @@
             <a href="#contacto">Contáctenos</a>
             <div class="form-actions">
               <a class="button button-outline" href="#contacto">Contáctenos</a>
-              <a class="button button-primary" id="mobile-whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">WhatsApp</a>
+              <a class="button button-primary" id="mobile-whatsapp" target="_blank" rel="noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">WhatsApp</a>
             </div>
           </div>
         </div>
@@ -628,12 +900,7 @@
             <div class="hero-panel-inner">
               <div class="profile-grid">
                 <div class="profile-photo-wrap">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Julio Francisco Espinoza" role="img">
-                    <rect width="200" height="200" fill="#e2e8f0"/>
-                    <circle cx="100" cy="80" r="35" fill="#94a3b8"/>
-                    <path d="M50 160c0-33 22-50 50-50s50 17 50 50" fill="#94a3b8"/>
-                    <text x="100" y="190" text-anchor="middle" font-size="14" fill="#64748b" font-family="system-ui">Foto del director</text>
-                  </svg>
+                  <img class="profile-photo" src="data:image/png;base64,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" alt="Julio Francisco Espinoza" />
                 </div>
 
                 <div>
@@ -643,7 +910,7 @@
 
                   <div class="info-stack">
                     <div class="info-item">
-                      <span class="icon-badge" aria-hidden="true">
+                      <span class="icon-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                           <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -651,7 +918,7 @@
                       <div>Trayectoria formada en firmas legales especializadas en impuestos y en firmas internacionales de asesoría y auditoría de primer nivel.</div>
                     </div>
                     <div class="info-item">
-                      <span class="icon-badge" aria-hidden="true">
+                      <span class="icon-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                           <circle cx="12" cy="12" r="9"></circle>
                           <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round"></path>
@@ -660,7 +927,7 @@
                       <div>Experiencia en empresas nacionales y transnacionales, con participación en seminarios locales e internacionales en materia tributaria e impuestos internacionales.</div>
                     </div>
                     <div class="info-item">
-                      <span class="icon-badge" aria-hidden="true">
+                      <span class="icon-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                           <path d="M4 20h16M6 20V8l6-4 6 4v12M10 12h4M10 16h4" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -688,7 +955,7 @@
           <div class="services-grid">
             <article class="card service-card">
               <div class="card-body">
-                <span class="icon-badge" aria-hidden="true">
+                <span class="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                     <path d="M4 6h16M8 3v6M16 3v6M5 10h14v11H5zM8 14h3M8 18h3M14 14h2M14 18h2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
@@ -705,7 +972,7 @@
 
             <article class="card service-card">
               <div class="card-body">
-                <span class="icon-badge" aria-hidden="true">
+                <span class="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                     <path d="M7 3h7l5 5v13H7z"></path>
                     <path d="M14 3v5h5M10 13h6M10 17h6" stroke-linecap="round"></path>
@@ -723,7 +990,7 @@
 
             <article class="card service-card">
               <div class="card-body">
-                <span class="icon-badge" aria-hidden="true">
+                <span class="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                     <path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"></path>
                     <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -741,6 +1008,434 @@
 
             <article class="card service-card">
               <div class="card-body">
-                <span class="icon-badge" aria-hidden="true">
+                <span class="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
-                    <path d="M4 19h16M8 19V8l4-4 4 4v11M10 11h4M10 15h
+                    <path d="M4 19h16M8 19V8l4-4 4 4v11M10 11h4M10 15h4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <h3>Servicios legales</h3>
+                <p>Gestión corporativa y legal para la operación formal de empresas y sus necesidades documentales.</p>
+                <ul class="bullet-list">
+                  <li>Constitución y disolución</li>
+                  <li>Poderes generales, especiales y generalísimos</li>
+                  <li>Beneficiario final e inversionistas extranjeros</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card service-card">
+              <div class="card-body">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M5 7h14M5 12h14M5 17h10M4 5h16v14H4z" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <h3>Servicios administrativos</h3>
+                <p>Soporte administrativo complementario para fortalecer el orden interno y la ejecución operativa del cliente.</p>
+                <ul class="bullet-list">
+                  <li>Nómina</li>
+                  <li>Inventario físico y digital</li>
+                  <li>Mensajería y archivo</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="perfil">
+        <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;">
+          <div>
+            <div class="section-header" style="margin-bottom:0;">
+              <span class="eyebrow">Perfil profesional</span>
+              <h2>Experiencia técnica con criterio empresarial.</h2>
+              <p>
+                Tax Nicaragua es liderada por Julio Francisco Espinoza, Contador Público, con trayectoria en firmas legales especializadas en impuestos, firmas internacionales de auditoría y consultoría, y atención a empresas locales y transnacionales.
+              </p>
+            </div>
+            <p style="margin:22px 0 0;color:var(--slate-600);font-size:1.03rem;">
+              Nuestra práctica combina criterio técnico, experiencia multisectorial y acompañamiento cercano a la gerencia, con enfoque en cumplimiento, prevención de riesgos y apoyo oportuno para la toma de decisiones empresariales.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="card feature-card">
+              <div class="card-body">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M12 4v16M4 8c2-2 4-3 8-3s6 1 8 3M4 16c2 2 4 3 8 3s6-1 8-3" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+                <h3>Base técnica sólida</h3>
+                <p>Formación práctica en consultoría fiscal, auditoría y acompañamiento legal con enfoque corporativo.</p>
+              </div>
+            </article>
+
+            <article class="card feature-card">
+              <div class="card-body">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M16 19a4 4 0 0 0-8 0M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 19a4 4 0 0 1 4-4M20 19a4 4 0 0 0-4-4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <h3>Cobertura multisectorial</h3>
+                <p>Experiencia con clientes de servicios, comercio, importación, exportación, entretenimiento, transporte y otros sectores.</p>
+              </div>
+            </article>
+
+            <article class="card feature-card">
+              <div class="card-body">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M12 3l2.5 5.5L20 11l-4 4 .8 6-4.8-2.7L7.2 21 8 15l-4-4 5.5-2.5L12 3z" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <h3>Enfoque consultivo</h3>
+                <p>Comunicación clara, acompañamiento continuo y visión práctica orientada a cumplimiento, control y decisiones de negocio.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Sectores atendidos</span>
+            <h2>Experiencia con operaciones y necesidades diversas.</h2>
+            <p>Atendemos empresas de distintos sectores, adaptando nuestros servicios a la operación, el nivel de riesgo y las exigencias de cumplimiento de cada cliente.</p>
+          </div>
+
+          <div class="chip-row">
+            <span class="chip">Servicios</span>
+            <span class="chip">Comercio</span>
+            <span class="chip">Importadores</span>
+            <span class="chip">Exportadores</span>
+            <span class="chip">Entretenimiento</span>
+            <span class="chip">Transporte</span>
+            <span class="chip">Logística</span>
+            <span class="chip">Empresas locales</span>
+            <span class="chip">Empresas transnacionales</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="publicaciones">
+        <div class="container publication-layout">
+          <div>
+            <div class="section-header" style="margin-bottom:0;">
+              <span class="eyebrow">Publicaciones</span>
+              <h2>Un espacio pensado para compartir criterio técnico y documentación útil.</h2>
+              <p>En esta sección compartimos documentos, criterios técnicos, guías prácticas y material de consulta de utilidad para clientes, empresas y profesionales interesados en materia contable, fiscal y corporativa.</p>
+            </div>
+          </div>
+
+          <div class="publication-grid">
+            <article class="card publication-card">
+              <div class="card-body">
+                <span class="icon-badge" style="background:rgba(191,219,254,0.12);color:#bfdbfe;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M7 3h7l5 5v13H7z"></path>
+                    <path d="M14 3v5h5M10 13h6M10 17h6" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+                <h3>Publicaciones técnicas</h3>
+                <p>Espacio para compartir documentos, guías, criterios técnicos y material de consulta para clientes y público en general.</p>
+              </div>
+            </article>
+
+            <article class="card publication-card">
+              <div class="card-body">
+                <span class="icon-badge" style="background:rgba(191,219,254,0.12);color:#bfdbfe;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 5h16v14H4zM8 9h8M8 13h8M8 17h5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <h3>Biblioteca documental</h3>
+                <p>Repositorio para formatos, circulares, notas profesionales, documentos de referencia y contenido descargable.</p>
+              </div>
+            </article>
+
+            <article class="card publication-card">
+              <div class="card-body">
+                <span class="icon-badge" style="background:rgba(191,219,254,0.12);color:#bfdbfe;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 12h12M12 6v12" stroke-linecap="round"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </span>
+                <h3>Actualizaciones y criterios</h3>
+                <p>Contenido orientado a cambios normativos, recomendaciones prácticas y temas de interés empresarial.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Blog</span>
+            <h2>Blog con contenido técnico, práctico y actualizado.</h2>
+            <p>Publicamos análisis, comentarios, alertas y contenidos de interés empresarial para mantener informados a nuestros clientes y aportar valor a través de conocimiento útil y aplicable.</p>
+          </div>
+
+          <div class="blog-grid">
+            <article class="card blog-card">
+              <div class="card-body">
+                <div class="blog-meta">Entrada sugerida 1</div>
+                <h3>Análisis fiscales y criterios prácticos</h3>
+                <p>Aquí pueden publicarse artículos completos, comentarios técnicos, documentos descargables y contenidos orientados a resolver consultas frecuentes o presentar temas de actualidad.</p>
+                <span class="text-link">Leer más →</span>
+              </div>
+            </article>
+
+            <article class="card blog-card">
+              <div class="card-body">
+                <div class="blog-meta">Entrada sugerida 2</div>
+                <h3>Publicaciones sobre cumplimiento y riesgos</h3>
+                <p>Aquí pueden publicarse artículos completos, comentarios técnicos, documentos descargables y contenidos orientados a resolver consultas frecuentes o presentar temas de actualidad.</p>
+                <span class="text-link">Leer más →</span>
+              </div>
+            </article>
+
+            <article class="card blog-card">
+              <div class="card-body">
+                <div class="blog-meta">Entrada sugerida 3</div>
+                <h3>Comentarios sobre temas contables y corporativos</h3>
+                <p>Aquí pueden publicarse artículos completos, comentarios técnicos, documentos descargables y contenidos orientados a resolver consultas frecuentes o presentar temas de actualidad.</p>
+                <span class="text-link">Leer más →</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="contacto">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-header">
+              <span class="eyebrow">Contáctenos</span>
+              <h2>Un cierre claro y orientado a conversión.</h2>
+              <p>Puede contactarnos para recibir información sobre nuestros servicios contables, fiscales, legales, certificaciones contables y apoyo administrativo.</p>
+            </div>
+
+            <div class="contact-stack">
+              <article class="card">
+                <div class="card-body contact-item">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                      <path d="M4 6h16v12H4z"></path>
+                      <path d="M4 8l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Correo</strong><br />
+                    <a href="mailto:julioespinoza@taxnicaragua.com">julioespinoza@taxnicaragua.com</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card">
+                <div class="card-body contact-item">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                      <path d="M6 4h4l2 5-2.5 2.5a15 15 0 0 0 4.5 4.5L16.5 14l5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 2 4a2 2 0 0 1 2-2h2z" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Teléfono / WhatsApp</strong><br />
+                    <a href="tel:+50576518677">+505 7651-8677</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card">
+                <div class="card-body contact-item">
+                  <span class="icon-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M3 12h18" stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Sitio web</strong><br />
+                    taxnicaragua.com
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <form class="card contact-form" id="contactForm">
+            <div class="card-body">
+              <div class="form-grid">
+                <div class="form-row">
+                  <div class="field">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Escriba su nombre" />
+                  </div>
+                  <div class="field">
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" placeholder="nombre@empresa.com" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="text" placeholder="+505" />
+                  </div>
+                  <div class="field">
+                    <label for="servicio">Tipo de servicio</label>
+                    <select id="servicio" name="servicio">
+                      <option value="Contabilidad tercerizada">Contabilidad tercerizada</option>
+                      <option value="Certificaciones contables">Certificaciones contables</option>
+                      <option value="Servicios fiscales">Servicios fiscales</option>
+                      <option value="Servicios legales">Servicios legales</option>
+                      <option value="Servicios administrativos">Servicios administrativos</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Describa brevemente lo que necesita"></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button button-primary" type="submit">Enviar mensaje</button>
+                  <a class="button button-outline" id="form-whatsapp" target="_blank" rel="noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">Escribir por WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="assistant">
+      <div class="card" style="overflow:hidden;border-radius:28px;box-shadow:var(--shadow-lg);">
+        <div class="assistant-header">
+          <span class="icon-badge" style="background:rgba(255,255,255,0.14);color:white;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+              <path d="M7 10h10M7 14h6" stroke-linecap="round"></path>
+              <path d="M12 3c-5 0-9 3.4-9 7.7 0 2.2 1.1 4.1 3 5.5V21l4.1-2.3c.6.1 1.2.2 1.9.2 5 0 9-3.4 9-7.7S17 3 12 3z" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+          <div>
+            <p><strong>Asistente de contacto</strong></p>
+            <p class="small">¿Qué necesita?</p>
+          </div>
+        </div>
+        <div class="assistant-body">
+          <div class="assistant-options" id="assistantOptions">
+            <button class="assistant-option" data-service="Servicios contables">Servicios contables</button>
+            <button class="assistant-option active" data-service="Servicios fiscales">Servicios fiscales</button>
+            <button class="assistant-option" data-service="Servicios legales">Servicios legales</button>
+            <button class="assistant-option" data-service="Certificaciones CPA">Certificaciones CPA</button>
+            <button class="assistant-option" data-service="Servicios administrativos">Servicios administrativos</button>
+          </div>
+          <div class="assistant-status">Selección actual: <strong id="selectedServiceText">Servicios fiscales</strong></div>
+          <div style="margin-top:14px;">
+            <a class="button button-primary" style="width:100%;" id="assistantWhatsapp" target="_blank" rel="noreferrer" href="https://wa.me/50576518677?text=Hola%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20Servicios%20fiscales%20en%20Tax%20Nicaragua.">Iniciar conversación</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#inicio" aria-label="Tax Nicaragua">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAACzCAYAAABPeWqnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA22SURBVHhe7d0JmxTHGcfxf4aUmIRcgCNM8A4SuE6QYx1ODaPgdJxjPC4gBfLJJHOMnA4JWA65xvAZDjkWEsM5xOJwjDF8HEcI0uvAUS44AhJ4oFa9VdM90z3dfe8/ZFkdRHe11N1V1f1V1V1dVf0N3V3dPT2a6ekAERERkQyR9AsgIiIiUiWSeEVERKQKJP0CiIiIiFSBpF8AERERkSoQ9AsgIiIiVSDpF0BERESkCgT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVSDpF0BERESkCiT9AoiIiIhUgaRfABEREZEqEPQLICIiIlIFkn4BRERERKpA0i+AiIiISBVI+gUQERERqQJBvwAiIiIiVfD/AAP4T4YcclLBAAAAAElFTkSuQmCC" alt="Tax Nicaragua" />
+          <div class="brand-meta">
+            <p class="brand-title">TAX NICARAGUA</p>
+            <p class="brand-subtitle">taxnicaragua.com</p>
+          </div>
+        </a>
+        <div class="footer-copy">Julio Francisco Espinoza · +505 7651-8677 · julioespinoza@taxnicaragua.com</div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const menuButton = document.getElementById("menuButton");
+        const mobileNav = document.getElementById("mobileNav");
+        const assistantOptions = document.querySelectorAll(".assistant-option");
+        const selectedServiceText = document.getElementById("selectedServiceText");
+        const assistantWhatsapp = document.getElementById("assistantWhatsapp");
+        const headerWhatsapp = document.getElementById("header-whatsapp");
+        const mobileWhatsapp = document.getElementById("mobile-whatsapp");
+        const formWhatsapp = document.getElementById("form-whatsapp");
+        const contactForm = document.getElementById("contactForm");
+        const serviceField = document.getElementById("servicio");
+
+        function buildWhatsappUrl(service) {
+          const text = Hola, deseo recibir información sobre ${service} en Tax Nicaragua.;
+          return https://wa.me/50576518677?text=${encodeURIComponent(text)};
+        }
+
+        function setSelectedService(service) {
+          selectedServiceText.textContent = service;
+          const url = buildWhatsappUrl(service);
+          assistantWhatsapp.href = url;
+          headerWhatsapp.href = url;
+          mobileWhatsapp.href = url;
+          formWhatsapp.href = url;
+
+          assistantOptions.forEach((button) => {
+            button.classList.toggle("active", button.dataset.service === service);
+          });
+        }
+
+        assistantOptions.forEach((button) => {
+          button.addEventListener("click", () => setSelectedService(button.dataset.service));
+        });
+
+        if (serviceField) {
+          serviceField.addEventListener("change", () => setSelectedService(serviceField.value));
+        }
+
+        if (menuButton) {
+          menuButton.addEventListener("click", () => {
+            const isOpen = mobileNav.classList.toggle("open");
+            menuButton.classList.toggle("active", isOpen);
+            menuButton.setAttribute("aria-expanded", String(isOpen));
+          });
+        }
+
+        document.querySelectorAll('.mobile-nav a, .nav a').forEach((link) => {
+          link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+            menuButton.classList.remove('active');
+            menuButton.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        contactForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const nombre = document.getElementById("nombre").value.trim();
+          const correo = document.getElementById("correo").value.trim();
+          const telefono = document.getElementById("telefono").value.trim();
+          const servicio = document.getElementById("servicio").value.trim();
+          const mensaje = document.getElementById("mensaje").value.trim();
+
+          const subject = Consulta desde taxnicaragua.com - ${servicio};
+          const body = [
+            Nombre: ${nombre || "N/D"},
+            Correo: ${correo || "N/D"},
+            Teléfono: ${telefono || "N/D"},
+            Servicio de interés: ${servicio || "N/D"},
+            "",
+            "Mensaje:",
+            mensaje || "N/D"
+          ].join("\n");
+
+          window.location.href = mailto:julioespinoza@taxnicaragua.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)};
+        });
+
+        setSelectedService("Servicios fiscales");
+      })();
+    </script>
+  </body>
+</html>
